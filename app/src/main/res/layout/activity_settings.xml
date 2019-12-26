@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/setting_Title"
+            android:textColor="@color/settings_title"
+            android:padding="3dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_setting_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_click"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myStyleX"
+                android:drawableRight="@drawable/right"
+                android:text="@string/setting_center_point" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_settings_lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/myStyle"
+                        android:text="@string/setting_center_latitude" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_center_latitude"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_settings_lng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/myStyle"
+                        android:text="@string/setting_center_longitude" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_center_longitude"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_click"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myStyleX"
+                android:drawableRight="@drawable/right"
+                android:text="@string/setting_distance" />
+
+            <LinearLayout
+                android:id="@+id/ll_settings_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/myStyle"
+                    android:text="@string/setting_radius" />
+
+                <TextView
+                    android:id="@+id/tv_setting_radius"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_click"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myStyleX"
+                android:drawableRight="@drawable/right"
+                android:text="@string/setting_time_notification" />
+
+            <LinearLayout
+                android:id="@+id/ll_settings_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/myStyle"
+                    android:text="@string/setting_time_notification_long" />
+
+                <TextView
+                    android:id="@+id/tv_setting_time_notification_long"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myStyleX"
+                android:clickable="false"
+                android:text="@string/setting_time_auto" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_settings_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_click">
+
+                    <TextView
+                        style="@style/myStyle"
+                        android:clickable="false"
+                        android:text="@string/setting_time_auto_start" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_time_auto_start"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:drawableRight="@drawable/right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_settings_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_click">
+
+                    <TextView
+                        style="@style/myStyle"
+                        android:clickable="false"
+                        android:text="@string/setting_time_auto_stop" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_time_auto_stop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:drawableRight="@drawable/right" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_setting_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_click"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myStyleX"
+                android:drawableRight="@drawable/right"
+                android:text="@string/setting_frequency" />
+
+            <LinearLayout
+                android:id="@+id/ll_settings_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/myStyle"
+                    android:text="@string/setting_frequency_value" />
+
+                <TextView
+                    android:id="@+id/tv_setting_frequency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_setting_review"
+            style="@style/myStyleX"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/right"
+            android:text="@string/setting_review" />
+        <TextView
+            android:id="@+id/tv_setting_introduce"
+            style="@style/myStyleX"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/right"
+            android:text="@string/setting_introduce" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/select_operator"
+            android:text="@string/setting_save"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_settings_exist"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/select_operator"
+            android:text="@string/setting_exist"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

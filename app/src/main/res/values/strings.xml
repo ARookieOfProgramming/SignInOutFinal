@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">打卡提醒</string>
+    <string name="login_name">打卡提醒App</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="user_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_forget">忘记密码</string>
+    <string name="login_register">注册用户</string>
+    <string name="login_agreement">用户协议</string>
+    <string name="password_confirm">请确认密码</string>
+    <string name="register">注册</string>
+    <string name="underscore">---我也是有底线的---</string>
+    <string name="statement">作者：ZXZ"\n"声明：仅用交流学习！</string>
+    <string name="setting_Title">设置</string>
+    <string name="setting_center_point_input">手动输入</string>
+    <string name="setting_center_point_auto">地图标点</string>
+    <string name="setting_center_point">设置中心点</string>
+    <string name="setting_center_latitude">纬度:</string>
+    <string name="setting_center_longitude">经度:</string>
+    <string name="setting_distance">设置打卡距离</string>
+    <string name="setting_radius">半径:</string>
+    <string name="setting_frequency">设置定位频率</string>
+    <string name="setting_frequency_value">频率:</string>
+    <string name="setting_radius_unit">米</string>
+    <string name="setting_time_notification">离开时间提醒</string>
+    <string name="setting_time_notification_long">时长:</string>
+    <string name="setting_time_auto">签到签退时间点</string>
+    <string name="setting_time_auto_start">开始时间:</string>
+    <string name="setting_time_auto_stop">结束时间:</string>
+    <string name="setting_review">恢复默认值</string>
+    <string name="setting_introduce">参数设置介绍</string>
+    <string name="setting_save">保存</string>
+    <string name="setting_exist">退出</string>
+
+    <string name="about_introduce_title">软件使用介绍</string>
+    <string name="about_introduce_title_one">软件功能描述：</string>
+    <string name="about_introduce_title_one_function">本软件旨在每天特定时间打开钉钉，并进行极速打卡，为用户解决上下班忘记打卡的烦恼</string>
+    <string name="about_introduce_title_one_using">进入本软件前，请先设置本软件和钉钉允许后台运行；首次进入本软件，打开左侧滑动界面进入设置，设置运行参数，然后点击保存退出，进入地图界面，点击打开提醒即可</string>
+    <string name="about_introduce_title_two">设置参数描述：</string>
+    <string name="about_introduce_title_two_one">中心点：即公司位置，可以进行手动输入也可以进入地图去标点</string>
+    <string name="about_introduce_title_two_two">打卡距离：即上班时与公司距离小于打卡距离时便会打开钉钉，进行极速签到(打卡分为签到与签退)</string>
+    <string name="about_introduce_title_two_three">离开时长提醒：一旦在签退时间到达后离开公司150米，便会在经过时长=离开时长时打开钉钉进行签退，若在提醒之前本软件已经开过钉钉进行极速签退，则提醒取消</string>
+    <string name="about_introduce_title_two_four">签到签退时间点：按照公司在钉钉设置的最早能打卡时间即可，例如，上下班时间 9:00--18:00，钉钉可以签到时间为：7:00，则签到时间点X可设置为7:00--9:00的任一时间点(注意:设置的时间点与上班时间不能小于定位频率)，签退时间填下班时间就好了</string>
+    <string name="about_introduce_title_two_five">设置频率：到达签到或签退时间点后，软件后台会进行地理定位，默认定位频率为一分钟一次，直到进入钉钉，结束定位</string>
+    <string name="about_introduce_title_two_six">恢复默认值：点击按钮后，设置的参数全部恢复成系统默认值</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F67BF</color>
+    <color name="colorPrimaryDark">#3F67BF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="strokeColor">#3F67BF</color>
+    <color name="radiusFillColor">#57bfe6</color>
+    <color name="settings_title">#0d0d0d</color>
+    <color name="settings_text">#1e1e1e</color>
+    <color name="solidTrue">#cac4c4</color>
+    <color name="solidFalse">#ffffff</color>
+    <color name="pressed">#4e81df</color>
+    <color name="notPressed">#5e93f7</color>
+</resources>

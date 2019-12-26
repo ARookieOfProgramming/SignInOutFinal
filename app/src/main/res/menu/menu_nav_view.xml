@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_view_settings"
+            android:title="设    置" />
+        <item
+            android:id="@+id/nav_view_about"
+            android:title="关    于" />
+        <item
+            android:id="@+id/nav_view_login_out"
+            android:title="退    出" />
+    </group>
+</menu>

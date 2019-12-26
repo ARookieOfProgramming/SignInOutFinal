@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingPointMapActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_map_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+
+            <EditText
+                android:id="@+id/activity_et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:background="@drawable/shape_left"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="搜索地点"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_et_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/shape_right"
+                android:drawableEnd="@drawable/search"
+                android:editable="false"
+                android:padding="3dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/activity_et_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="10"
+                android:background="@drawable/shape_left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:hint="全国"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_et_down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/shape_right"
+                android:drawableRight="@drawable/down"
+                android:editable="false"
+                android:padding="3dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/settings_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_map_search" />
+
+    <Button
+        android:id="@+id/btn_point_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/settings_map"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/select_operator"
+        android:text="确定" />
+</RelativeLayout>
